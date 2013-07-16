@@ -10,7 +10,7 @@ Todos.TodosController = Ember.ArrayController.extend({
 		}
 
 		// Create the new Todo model
-		Todos.Todo.createRecord({
+		var todo = Todos.Todo.create({
 			title: title,
 			isCompleted: false
 		});
@@ -19,14 +19,12 @@ Todos.TodosController = Ember.ArrayController.extend({
 		this.set('newTitle', '');
 
 		// Save the new model
-		this.get('store').commit();
+		todo.save();
 	},
 
 	clearCompleted: function () {
 		var completed = this.filterProperty('isCompleted', true);
 		completed.invoke('deleteRecord');
-
-		this.get('store').commit();
 	},
 
 	remaining: function () {

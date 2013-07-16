@@ -23,24 +23,14 @@ Todos.TodosIndexRoute = Ember.Route.extend({
 
 Todos.TodosActiveRoute = Ember.Route.extend({
 	setupController: function () {
-		var todos = Todos.Todo.filter(function (todo) {
-			if (!todo.get('isCompleted')) {
-				return true;
-			}
-		});
-
+		var todos = Todos.Todo.filtered('isCompleted', false);
 		this.controllerFor('todos').set('filteredTodos', todos);
 	}
 });
 
 Todos.TodosCompletedRoute = Ember.Route.extend({
 	setupController: function () {
-		var todos = Todos.Todo.filter(function (todo) {
-			if (todo.get('isCompleted')) {
-				return true;
-			}
-		});
-
+		var todos = Todos.Todo.filtered('isCompleted', true);
 		this.controllerFor('todos').set('filteredTodos', todos);
 	}
 });

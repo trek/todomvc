@@ -1,0 +1,25 @@
+{
+  "name": "ember-model-localstorage-adapter",
+  "version": "0.0.0",
+  "main": "ember-model-localstorage-adapter.js",
+  "dependencies": {
+    "ember-model": "latest"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "demo.html",
+    "demo.js"
+  ],
+  "gitHead": "6a90b84f76bcb58e504ed568bc6f3849de7bd105",
+  "readme": "# ember-model-localstorage-adapter\n\n![](https://d3oi6fmp1dfbdb.cloudfront.net/g.gif?repo=ebryn/ember-model-localstorage-adapter)",
+  "readmeFilename": "README.md",
+  "_id": "ember-model-localstorage-adapter@0.0.0",
+  "description": "![](https://d3oi6fmp1dfbdb.cloudfront.net/g.gif?repo=ebryn/ember-model-localstorage-adapter)",
+  "commit": "6a90b84f76bcb58e504ed568bc6f3849de7bd105",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ebryn/ember-model-localstorage-adapter.git"
+  }
+}
